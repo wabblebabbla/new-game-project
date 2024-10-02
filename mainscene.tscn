@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://dio6pm8itc8dd"]
+
+[ext_resource type="PackedScene" uid="uid://dyg2v3q60mrgs" path="res://tile_map.tscn" id="1_4a4p2"]
+[ext_resource type="Texture2D" uid="uid://ctroyjfvqu27k" path="res://assets/winter background 2.webp" id="1_p6rw8"]
+[ext_resource type="PackedScene" uid="uid://dwmaa0aknaq3l" path="res://main_character.tscn" id="2_ma2cm"]
+[ext_resource type="PackedScene" uid="uid://cllwshftxu6hx" path="res://area_2d.tscn" id="3_nlvmi"]
+[ext_resource type="Texture2D" uid="uid://b50rta4kcwjle" path="res://assets/star.png" id="4_fdooi"]
+
+[node name="MAINSCENE" type="Node2D"]
+
+[node name="WinterBackground2" type="Sprite2D" parent="."]
+texture = ExtResource("1_p6rw8")
+
+[node name="TileMap" parent="." instance=ExtResource("1_4a4p2")]
+position = Vector2(68, 50)
+
+[node name="main character" parent="." instance=ExtResource("2_ma2cm")]
+position = Vector2(157, 70)
+scale = Vector2(0.25, 0.25)
+
+[node name="star" parent="." instance=ExtResource("3_nlvmi")]
+position = Vector2(303, 103)
+scale = Vector2(0.1, 0.1)
+
+[node name="Star" type="Sprite2D" parent="."]
+position = Vector2(490, 103)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("4_fdooi")
+
+[node name="Star2" type="Sprite2D" parent="."]
+position = Vector2(382, 119)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("4_fdooi")
