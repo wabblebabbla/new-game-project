@@ -11,9 +11,6 @@
 [node name="WinterBackground2" type="Sprite2D" parent="."]
 texture = ExtResource("1_p6rw8")
 
-[node name="TileMap" parent="." instance=ExtResource("1_4a4p2")]
-position = Vector2(68, 50)
-
 [node name="main character" parent="." instance=ExtResource("2_ma2cm")]
 position = Vector2(157, 70)
 scale = Vector2(0.25, 0.25)
@@ -31,3 +28,6 @@ texture = ExtResource("4_fdooi")
 position = Vector2(382, 119)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("4_fdooi")
+
+[node name="TileMap" parent="." instance=ExtResource("1_4a4p2")]
+position = Vector2(-87, 22)
